@@ -3,5 +3,5 @@ def fact(num):
         return 1
     else:
         return num* fact(num-1)
-
+    
 print(fact(5))
