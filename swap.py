@@ -1,9 +1,7 @@
-def swap(left,right,nums):
-    if left>=right:
-        return
-    nums[left],nums[right]=nums[right],nums[left]
-    swap(left+1,right-1,nums)
-nums=[3,4,2,5,6,7,8,5,6]
-swap(0,len(nums)-1,nums)
-print(nums)
-        
+def fact(n):
+    if n<=1:
+        return n
+    return fact(n-1)+fact(n-2)
+n=int(input("enter a number:  "))
+for i in range(n):
+    print(fact(i),end=" ")
