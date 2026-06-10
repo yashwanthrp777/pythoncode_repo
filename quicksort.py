@@ -16,7 +16,7 @@ def quick_sort(nums,low,high):
         p_ind=partition(nums,low,high)
         quick_sort(nums,low,p_ind-1)
         quick_sort(nums,p_ind+1,high)
-nums=list(map(int,input("enter the numbers separated by space:  ").split()))
+nums=[3,4,2,5,7,6,8]
 quick_sort(nums,0,len(nums)-1)
 print("sorted array:", nums)
 
