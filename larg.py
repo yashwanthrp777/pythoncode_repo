@@ -1,6 +1,9 @@
-arr=[9,6,4,44,55,12,99]
-larg=arr[0]
-for i in arr:
-    if i>larg:
-        larg=i
-print(f"{larg} no in a  larg array ")
+def largest(nums):
+    largest_nums=nums[0]
+    n=len(nums)
+    for i in range(0,n):
+        if nums[i]>largest_nums:
+            largest_nums=nums[i]
+    return largest_nums
+nums=[9,34,56,22,77,88,44]
+print(f"{largest(nums)}")   
