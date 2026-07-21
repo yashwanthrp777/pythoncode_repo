@@ -2,15 +2,59 @@ class link:
     def __init__(self,val):
         self.val=val
         self.next=None
+class singlelink:
+    def __init__(self):
+       self.head=None
+    def append(self,val):
+         new_node=link(val)
+         if self.head==None:
+             self.head=new_node
+         else:
+            corr=self.head
+            while corr.next!=None:
+                corr=corr.next
+            corr.next=new_node
+    def traverse(self):
+        if self.head==None:
+            print("sll is empty")
+        else:
+            corr=self.head
+            while corr!=None:
+              print(corr.val)
+              print(corr.next) 
+sll=singlelink()
+sll.append(2)
+sll.append(3)
+sll.append(5)
+
+sll.traverse()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
-node1=link(1)
-node2=link(2)
-node3=link(3)
 
-node1.next=node2
-node2.next=node3
-
-print(node1.val)
-print(node2.val)
-print(node3.val)
